@@ -1,0 +1,21 @@
+
+//1. Write a hierarchy of geometric shape classes 'Circle', 'Rectangle', etc inherited from a common base class 'Shape'
+package inheritence;
+
+	public class Square extends Shape{
+	    
+	    float length;
+	    String colour;
+	    Square(String colour,float length){
+	        super(colour);
+	        this.length=length;
+	    }
+
+	    public float calculateArea() {
+	        return length*length;
+	    }
+
+	    public float calculatePerimeter() {
+	        return 4*length;
+	    }
+	}
